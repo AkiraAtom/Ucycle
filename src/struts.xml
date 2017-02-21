@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="jp.co.internous.action" extends="struts-default">
+		<action name="GoMainAction" class="jp.co.internous.action.GoMainAction"
+			method="execute">
+			<result name="success">/Main.jsp</result>
+		</action>
+
+		<action name="LoginAction" class="jp.co.internous.action.LoginAction"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+			<result name="error">/Login.jsp</result>
+		</action>
+
+		<action name="GoCreateAction" class="jp.co.internous.action.GoCreateAction"
+			method="execute">
+			<result name="success">/Create.jsp</result>
+		</action>
+
+		<action name="GoLoginAction" class="jp.co.internous.action.GoLoginAction"
+			method="execute">
+			<result name="success">/Login.jsp</result>
+		</action>
+		<action name="GoMypageAction" class="jp.co.internous.action.GoMypageAction"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+		</action>
+
+		<action name="GoCycleAction" class="jp.co.internous.action.GoCycleAction"
+			method="execute">
+			<result name="success">/Cycle.jsp</result>
+		</action>
+
+		<action name="GoEditAction" class="jp.co.internous.action.GoEditAction"
+			method="execute">
+			<result name="success">/Edit.jsp</result>
+		</action>
+
+		<action name="GoHistoryAction" class="jp.co.internous.action.GoHistoryAction"
+			method="execute">
+			<result name="success">/History.jsp</result>
+		</action>
+
+		<action name="GoPortAction" class="jp.co.internous.action.GoPortAction"
+			method="execute">
+			<result name="success">/Port.jsp</result>
+		</action>
+
+		<action name="GoReservationAction" class="jp.co.internous.action.GoReservationAction"
+			method="execute">
+			<result name="success">/Reservation.jsp</result>
+			<result name="error">/Credit.jsp</result>
+		</action>
+
+		<action name="GoWithdrawAction" class="jp.co.internous.action.GoWithdrawAction"
+			method="execute">
+			<result name="success">/Withdraw.jsp</result>
+		</action>
+
+        <action name="LogoutAction" class="jp.co.internous.action.LogoutAction"
+			method="execute">
+			<result name="success">/Login.jsp</result>
+		</action>
+
+		<action name="GoTwitterAction" class="jp.co.internous.action.GoTwitterAction"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+		</action>
+
+		<action name="LoginTwitterAction" class="jp.co.internous.action.LoginTwitterAction"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		<action name="SignInServlet" class="jp.co.internous.facebook.SignInServlet"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+		</action>
+
+		<action name="CallbackServlet" class="jp.co.internous.facebook.CallbackServlet"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+		</action>
+
+		<action name="LogoutServlet" class="jp.co.internous.facebook.LogoutServlet"
+			method="execute">
+			<result name="success">/Login.jsp</result>
+		</action>
+
+		<action name="GoogleOAuth" class="jp.co.internous.google.GoogleOAuth"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+		</action>
+
+		<action name="GoogleOAuth2" class="jp.co.internous.google.GoogleOAuth2"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+		</action>
+
+		<action name="GoUserPolicyAction" class="jp.co.internous.action.GoUserPolicyAction"
+			method="execute">
+			<result name="success">/UserPolicy.jsp</result>
+		</action>
+
+		<action name="WithdrawCompleteAction" class="jp.co.internous.action.WithdrawCompleteAction"
+			method="execute">
+			<result name="success">/WithdrawComplete.jsp</result>
+			<result name="error">/Withdraw.jsp</result>
+		</action>
+
+		<action name="ReservationAction" class="jp.co.internous.action.ReservationAction"
+			method="execute">
+			<result name="success">/ReservationComplete.jsp</result>
+			<result name="error">/Reservation.jsp</result>
+		</action>
+
+		<action name="CycleAction" class="jp.co.internous.action.CycleAction"
+			method="execute">
+			<result name="success">/Credit.jsp</result>
+			<result name="reservation">/Reservation.jsp</result>
+			<result name="error">/Cycle.jsp</result>
+		</action>
+
+		<action name="InsertAction" class="jp.co.internous.action.InsertAction"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+			<result name="error">/Create.jsp</result>
+		</action>
+		<action name="UpdataAction"
+         class="jp.co.internous.action.UpdataAction"
+         method="execute">
+         <result name="success">/Mypage.jsp</result>
+         <result name="error">/Edit.jsp</result>
+         <result name="input">/Edit.jsp</result>
+		 </action>
+
+		<action name="PortAction" class="jp.co.internous.action.PortAction"
+			method="execute">
+			<result name="success">/Cycle.jsp</result>
+			<result name="error">/Port.jsp</result>
+		</action>
+<!-- 
+		<action name="ReseGoMypageAction" class="jp.co.internous.action.ReseGoMypageAction"
+			method="execute">
+			<result name="success">/Mypage.jsp</result>
+		</action>
+		 -->
+
+
+	</package>
+</struts>

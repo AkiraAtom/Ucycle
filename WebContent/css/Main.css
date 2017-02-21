@@ -1,0 +1,312 @@
+@CHARSET "UTF-8";
+
+/*レスポンシブ　970px以下*/
+@media screen and (max-width: 970px) {
+	body {
+		margin: 0;
+		font-size: 90%;
+		background-color: #fffaf0;
+	}
+	header {
+		background-color: rgba(0, 0, 0, 0.7);
+		position: fixed;
+		height: 40px;
+		width: 100%;
+		z-index: 100;
+	}
+	header ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.project_title {
+		float: left;
+		font-size: 150%;
+		width: 50%;
+		height: 40px;
+	}
+	.menu_link {
+		font-size: 15px;
+		transition: all 0.5s;
+		float: right;
+		width: 20%;
+		height: 40px;
+	}
+	header a {
+		color: rgba(255, 255, 255, 0.9);
+		text-decoration: none;
+		padding: auto auto;
+		list-style: none;
+		display: block;
+		text-align: center;
+		height: 40px;
+	}
+	header .menu_link a {
+		color: rgba(255, 255, 255, 0.9);
+		text-decoration: none;
+		padding: 10px;
+		list-style: none;
+		display: block;
+		text-align: center;
+		transition: 0.3s;
+		height: 20px;
+		font-size: 10px;
+	}
+	header .menu_link a:hover {
+		background-color: rgba(200, 200, 200, 0.7);
+		color: rgba(0, 0, 0, 0.9);
+	}
+	.contents {
+		margin: 0;
+		width: 1013px;
+		clear: both;
+		padding-top: 20%;
+		min-height: 30vw;
+		font-size: 100%;
+		text-align: center;
+	}
+	.top {
+		margin: 0;
+		clear: both;
+		padding-top: 20%;
+		padding-left: 5%;
+		background-image: url(../img/bike4.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 5px;
+		min-height: 40vw;
+		font-size: 100%;
+		color: rgba(255, 255, 255, 0.9);
+		text-shadow: 1px 1px 20px #000;
+	}
+	.about {
+		margin: 0;
+		min-height: 60vw;
+		font-size: 100%;
+		border: 1px solid #dcdcdc;
+		background-color: #f1f1f1;
+		border-radius: 5px;
+	}
+	.about_desc {
+		margin: 0px 10% 0px 10%;
+		width: 80%;
+		text-align: center;
+		min-height: 50vw;
+	}
+	.about_desc h3 {
+		text-align: center;
+		margin-top: 35px;
+	}
+	.about_contents {
+
+	}
+	.map {
+		clear: both;
+		min-height: 50vw;
+		font-size: 100%;
+	}
+	.google_map {
+		float: left;
+		margin: 2%;
+		width: 470px;
+		min-height: 45vw;
+		z-index: -1;
+	}
+	.map_desc {
+		float: left;
+		margin: 5%;
+		width: auto;
+		min-height: 45vw;
+	}
+	.shop {
+		float: left;
+		font-size: 100%;
+		padding-left: 10px;
+		height: 350px;
+		overflow: scroll;
+		border: 1px #000000 solid;
+		z-index: 100;
+	}
+	.sns {
+		clear: both;
+		min-height: 45vw;
+		font-size: 100%;
+		border: 1px solid #dcdcdc;
+		background-color: #f1f1f1;
+		border-radius: 5px;
+	}
+	.sns_twitter {
+		clear: both;
+		margin: 5px 5% 10px 5%;
+		width: 90%;
+		height: 100%;
+		min-height: 40vw;
+	}
+	.sns_fb {
+		clear: both;
+		margin: 0px 5% 0px 5%;
+		width: 90%;
+		min-height: 40vw;
+	}
+	footer {
+		clear: both;
+		height: 60px;
+		font-size: 100%;
+		text-align: center;
+	}
+}
+
+/*レスポンシブ640px以下*/
+@media screen and (max-width:640px) {
+	body {
+		margin: 0;
+		font-size: 90%;
+		background-color: #fffaf0;
+	}
+	header {
+		background-color: rgba(0, 0, 0, 0.7);
+		position: fixed;
+		height: 40px;
+		width: 100%;
+		z-index: 100;
+	}
+	header ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.project_title {
+		float: left;
+		font-size: 150%;
+		width: 50%;
+		height: 40px;
+	}
+	.menu_link {
+		font-size: 15px;
+		transition: all 0.5s;
+		float: right;
+		width: 20%;
+		height: 40px;
+	}
+	header a {
+		color: rgba(255, 255, 255, 0.9);
+		text-decoration: none;
+		padding: auto auto;
+		list-style: none;
+		display: block;
+		text-align: center;
+		height: 40px;
+	}
+	header .menu_link a {
+		color: rgba(255, 255, 255, 0.9);
+		text-decoration: none;
+		padding: 10px;
+		list-style: none;
+		display: block;
+		text-align: center;
+		transition: 0.3s;
+		height: 20px;
+		font-size: 10px;
+	}
+	header .menu_link a:hover {
+		background-color: rgba(200, 200, 200, 0.7);
+		color: rgba(0, 0, 0, 0.9);
+	}
+	.contents {
+		margin: 0;
+		width: 1013px;
+		clear: both;
+		padding-top: 20%;
+		min-height: 30vw;
+		font-size: 100%;
+		text-align: center;
+	}
+	.top {
+		margin: 0;
+		clear: both;
+		padding-top: 20%;
+		padding-left: 5%;
+		background-image: url(../img/bike4.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 5px;
+		min-height: 40vw;
+		font-size: 100%;
+		color: rgba(255, 255, 255, 0.9);
+		text-shadow: 1px 1px 20px #000;
+	}
+	.about {
+		margin: 0;
+		min-height: 60vw;
+		font-size: 100%;
+		border: 1px solid #dcdcdc;
+		background-color: #f1f1f1;
+		border-radius: 5px;
+	}
+	.about_desc {
+		margin: 0px 5% 0px 5%;
+		width: 90%;
+		text-align: center;
+		min-height: 50vw;
+	}
+	.about_desc h3 {
+		text-align: center;
+	}
+	.about_contents {
+
+	}
+	.map {
+		clear: both;
+		min-height: 50vw;
+		font-size: 100%;
+	}
+	.google_map {
+		clear: both;
+		margin: 2%;
+		width: 470px;
+		min-height: 45vw;
+	}
+	.map_desc {
+		clear: both;
+		margin: 0px 5% 0px 5%;
+		width: 90%;
+		min-height: 45vw;
+	}
+	.shop {
+		margin: 0px 5% 0px 5%;
+		font-size: 100%;
+		padding-left: 10px;
+		height: 100px;
+		overflow: scroll;
+		border: 1px #000000 solid;
+	}
+	.sns {
+		clear: both;
+		min-height: 45vw;
+		font-size: 100%;
+		border: 1px solid #dcdcdc;
+		background-color: #f1f1f1;
+		border-radius: 5px;
+	}
+	.sns_twitter {
+		clear: both;
+		margin: 5px 5% 10px 5%;
+		width: 90%;
+		height: 100%;
+		min-height: 40vw;
+	}
+	.sns_fb {
+		clear: both;
+		margin: 0px 5% 0px 5%;
+		width: 90%;
+		min-height: 40vw;
+	}
+	footer {
+		clear: both;
+		height: 60px;
+		font-size: 100%;
+		text-align: center;
+	}
+}
